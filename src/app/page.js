@@ -21,6 +21,15 @@ export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
+  const applyTheme = (t) => {
+    document.documentElement.setAttribute("data-theme", t);
+    if (t === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
+
   // Sync theme with document & localStorage
   useEffect(() => {
     const savedTheme = localStorage.getItem("nkd-theme");
@@ -28,13 +37,13 @@ export default function Home() {
     const initialTheme = savedTheme || (systemPrefersDark ? "dark" : "light");
 
     setTheme(initialTheme);
-    document.documentElement.setAttribute("data-theme", initialTheme);
+    applyTheme(initialTheme);
   }, []);
 
   const toggleTheme = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
     setTheme(nextTheme);
-    document.documentElement.setAttribute("data-theme", nextTheme);
+    applyTheme(nextTheme);
     localStorage.setItem("nkd-theme", nextTheme);
   };
 

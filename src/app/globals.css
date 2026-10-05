@@ -3,6 +3,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
+
 /* ─── Tailwind v4 Theme Configuration ─── */
 @theme {
   --color-sand: #F4ECE1;
@@ -113,7 +115,8 @@ body {
 }
 
 /* Dark theme */
-[data-theme="dark"] body {
+[data-theme="dark"] body,
+.dark body {
   background-color: var(--color-dark-bg);
   color: var(--color-dark-text);
 }
@@ -129,7 +132,8 @@ body {
   background: var(--color-sage);
   border-radius: var(--radius-pill);
 }
-[data-theme="dark"] ::-webkit-scrollbar-thumb {
+[data-theme="dark"] ::-webkit-scrollbar-thumb,
+.dark ::-webkit-scrollbar-thumb {
   background: var(--color-dark-sidebar);
 }
 
