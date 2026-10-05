@@ -1,60 +1,75 @@
-# Niraj Kumar Dangi — Portfolio
+# Niraj Kumar Dangi — 3D Claymorphic Developer Portfolio
 
-A responsive, static portfolio site with a warm cream-and-peach clay design, dark theme support, animated scroll reveals, and a full-text search across projects and skills.
+A modern, tactile developer portfolio website rebuilt with **Next.js (App Router)** and **Tailwind CSS v4**, featuring a bespoke **3D Claymorphic / Neumorphic UI design system**.
 
-🌐 **Live**: [nirajkrdangi.netlify.app](https://nirajkrdangi.netlify.app/)
+🌐 **Live URL**: [nirajkrdangi.netlify.app](https://nirajkrdangi.netlify.app/)  
+💼 **LinkedIn**: [linkedin.com/in/nirajkumardangi](https://www.linkedin.com/in/nirajkumardangi/)  
+🐙 **GitHub**: [github.com/nirajkumardangi](https://github.com/nirajkumardangi)  
 
-## Tech Stack
+---
 
-- **HTML5** — semantic structure with inline SVG icon sprite
-- **CSS3** — custom properties, clay/neumorphic design tokens, full responsive breakpoints
-- **Vanilla JS** — search, theme toggle, drawer navigation, scroll progress, IntersectionObserver
-- **GSAP 3.15** — title reveal animation and scroll-triggered section reveals (self-hosted)
-- **Self-hosted fonts** — DM Sans + Sora variable WOFF2
+## 🎨 Design System & Visual Aesthetics
 
-## Run Locally
+- **Tactile 3D Claymorphic Surfaces**: Custom multi-layered inset and drop shadows (`--shadow-clay`, `--shadow-clay-sm`, `--shadow-button`, etc.) simulating soft molded plastic surfaces with tangible depth and pressing feedback (`active:scale-95`).
+- **Warm Pastel & Ceramic Palette**:
+  - Global Background: Ceramic Sand Cream (`#F4ECE1`)
+  - Tactile Sidebar & Feature Banner: Soft Pastel Sage Green (`#9BB0A5`)
+  - Hero Card: Warm Peach Cream (`#F2E3D5`)
+  - Accents: Terracotta Coral (`#E27D60`), Warm Mustard Gold (`#E8B067`), Sky Blue Slate (`#88BDBC`), Pastel Mint (`#A3C9A8`)
+- **Dark Mode Clay**: Harmonious deep slate clay styling (`#1A2332` / `#243044`) with tailored dark shadow bevels and smooth theme switching.
+- **Typography**: Google Font **Nunito** with rounded letterforms matching the tactile theme.
 
-Serve the root directory with any static server:
+---
+
+## 🚀 Key Features
+
+- **Tactile Clay Sidebar**: Sticky navigation bar with quick links, avatar profile, and direct CTA to get in touch.
+- **Header & Live Full-Text Search**: Filter tech stack chips and featured projects simultaneously with real-time feedback, plus `Ctrl + K` / `Cmd + K` focus shortcut.
+- **Interactive Quick Metrics**: 4 colorful clay tiles highlighting public repos, contributions, credentials, and open availability.
+- **Interactive Tech Stack Matrix**: Expandable pill grid with brand SVGs and categorized tags.
+- **Featured Projects**: Showcase cards with project previews, category tags, descriptions, and direct repository/demo links (Tree Detection, RAG AI Assistant, DevTinder, WriteNova).
+- **Experience & Education**: Timeline card detailing internship at 366Pi Technologies, MCA at Doranda College, and BSc Computer Science at Ranchi University.
+- **Verified Certifications**: FreeCodeCamp, PhysicsWallah Full Stack, and Johns Hopkins / Coursera credentials with direct verification links.
+- **GitHub Highlights Snapshot**: Pull Shark ×2 badge and contribution summary.
+- **Bottom Feature Banner & Contact Grid**: Tangible contact tiles for email, LinkedIn, GitHub, phone, and website.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Library**: React 19
+- **Styling**: Tailwind CSS v4 with custom `@theme` clay tokens
+- **Icons**: Custom optimized inline SVG components
+- **Deployment**: Zero-config deployment on Vercel or Netlify
+
+---
+
+## 💻 Getting Started Locally
 
 ```bash
-# Python
-python -m http.server 4173
+# Clone the repository
+git clone https://github.com/nirajkumardangi/portfolio.git
+cd portfolio
 
-# Node (npx)
-npx -y serve . -p 4173
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
 
-Then open [http://localhost:4173](http://localhost:4173).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Project Structure
+### Production Build
 
-```
-├── index.html          # Main page
-├── styles.css          # All styling + responsive breakpoints
-├── app.js              # Search, theme, nav, animations
-├── 404.html            # Custom error page
-├── robots.txt          # SEO crawl rules
-├── sitemap.xml         # Sitemap for search engines
-├── vendor/
-│   └── gsap.min.js     # Self-hosted GSAP 3.15.0
-└── public/
-    ├── fonts/          # DM Sans & Sora (WOFF2) + licenses
-    ├── illustrations/  # Hero & about artwork
-    ├── projects/       # Project screenshots & concepts
-    ├── resume/         # Downloadable resume PDF
-    └── tech-icons/     # Technology brand SVGs
+```bash
+npm run build
+npm start
 ```
 
-## Deployment
+---
 
-This is a static site — deploy to any static host:
-
-- **Netlify**: Connect repo → auto-deploys on push
-- **Vercel**: Import project → zero-config deploy
-- **GitHub Pages**: Push to `main` → enable in Settings
-
-No build step required.
-
-## License
+## 📄 License
 
 © 2026 Niraj Kumar Dangi. All rights reserved.
