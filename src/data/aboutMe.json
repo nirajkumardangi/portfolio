@@ -1,0 +1,249 @@
+{
+  "personal": {
+    "name": "Niraj Kumar Dangi",
+    "shortName": "Niraj",
+    "title": "Full-Stack & AI Developer",
+    "tagline": "Building with purpose. Ready for full-stack & AI roles.",
+    "location": {
+      "city": "Ranchi",
+      "state": "Jharkhand",
+      "country": "India"
+    },
+    "availability": {
+      "status": "Open to internship opportunities",
+      "types": ["Full-Stack Developer", "Applied AI Engineer", "Software Intern"],
+      "openForWork": true
+    },
+    "bio": [
+      "Full-Stack & AI Developer who has built RAG systems and computer-vision applications with Next.js, React, Node.js, PostgreSQL, MongoDB, AWS, and Docker.",
+      "My work includes a local-first RAG knowledge assistant and an internship contribution to an AI-powered Tree Detection & Localization System at 366Pi Technologies.",
+      "Dedicated to building practical, performant, and purposeful software from local document intelligence to production web platforms."
+    ],
+    "highlights": [
+      "Full-Stack Development",
+      "Applied AI & RAG Systems",
+      "Computer Vision (YOLO)",
+      "Open Source Contributor"
+    ],
+    "contact": {
+      "email": "nirajkrdangi@gmail.com",
+      "phone": "+918825224435",
+      "displayPhone": "+91-882-522-4435",
+      "website": "https://nirajkrdangi.netlify.app/",
+      "github": "https://github.com/nirajkumardangi",
+      "linkedin": "https://www.linkedin.com/in/nirajkumardangi/"
+    },
+    "assets": {
+      "avatar": "/illustrations/developer-avatar-v2.webp",
+      "workspaceIllustration": "/illustrations/developer-workspace-v2.webp",
+      "resumePdf": "/resume/Niraj-Kumar-Dangi-Resume.pdf"
+    }
+  },
+  "stats": [
+    {
+      "id": "repos",
+      "label": "Public repositories",
+      "value": "36",
+      "caption": "Public projects & learning repos"
+    },
+    {
+      "id": "contributions",
+      "label": "Contributions",
+      "value": "803",
+      "caption": "Last year · snapshot 01 Oct 2026"
+    },
+    {
+      "id": "credentials",
+      "label": "Credentials",
+      "value": "4 Listed",
+      "caption": "Resume + LinkedIn"
+    },
+    {
+      "id": "availability",
+      "label": "Currently open to",
+      "value": "Internships",
+      "caption": "Full-stack & AI opportunities"
+    }
+  ],
+  "skills": {
+    "featured": [
+      { "name": "JavaScript", "icon": "/tech-icons/javascript.svg", "category": "Languages" },
+      { "name": "React", "icon": "/tech-icons/react.svg", "category": "Frontend" },
+      { "name": "Next.js", "icon": "/tech-icons/nextjs.svg", "category": "Frontend" },
+      { "name": "Node.js", "icon": "/tech-icons/nodejs.svg", "category": "Backend" },
+      { "name": "Express.js", "icon": "/tech-icons/express.svg", "category": "Backend" },
+      { "name": "MongoDB", "icon": "/tech-icons/mongodb.svg", "category": "Databases" },
+      { "name": "PostgreSQL", "icon": "/tech-icons/postgresql.svg", "category": "Databases" },
+      { "name": "Python", "icon": "/tech-icons/python.svg", "category": "Languages" },
+      { "name": "FastAPI", "icon": "/tech-icons/fastapi.svg", "category": "Backend" },
+      { "name": "ChromaDB", "icon": "/tech-icons/chroma.svg", "category": "AI / Vector DB" },
+      { "name": "Firebase", "icon": "/tech-icons/firebase.svg", "category": "Databases" },
+      { "name": "Docker", "icon": "/tech-icons/docker.svg", "category": "DevOps" }
+    ],
+    "additional": [
+      { "name": "Tailwind CSS", "icon": "/tech-icons/tailwindcss.svg", "category": "Frontend" },
+      { "name": "Vite", "icon": "/tech-icons/vite.svg", "category": "Frontend" },
+      { "name": "Gemini AI", "icon": "/tech-icons/gemini.svg", "category": "AI / ML" },
+      { "name": "TypeScript", "icon": "/tech-icons/typescript.svg", "category": "Languages" },
+      { "name": "AWS", "icon": "/tech-icons/aws.svg", "category": "Cloud" },
+      { "name": "SQLite", "icon": "/tech-icons/sqlite.svg", "category": "Databases" },
+      { "name": "Redis", "icon": "/tech-icons/redis.svg", "category": "Databases" },
+      { "name": "Java", "icon": "/tech-icons/java.svg", "category": "Languages" },
+      { "name": "MySQL", "icon": "/tech-icons/mysql.svg", "category": "Databases" },
+      { "name": "Git & GitHub", "icon": "/tech-icons/git.svg", "category": "Tools" }
+    ]
+  },
+  "projects": [
+    {
+      "id": "tree-detection",
+      "title": "Tree Detection",
+      "kicker": "Internship contribution · 366Pi Technologies",
+      "description": "Contributed to an AI-powered tree detection and localization system, including image-validation workflows for detection, localization, segmentation, and metadata generation.",
+      "tags": ["YOLO", "Computer vision", "Internship", "Python"],
+      "image": "/projects/tree-detection-hld.webp",
+      "featured": true,
+      "links": [
+        {
+          "label": "My fork",
+          "url": "https://github.com/nirajkumardangi/tree-detection-localization",
+          "isExternal": true
+        },
+        {
+          "label": "Original · 366Pi",
+          "url": "https://github.com/366Pi/tree-detection-localization",
+          "isExternal": true
+        }
+      ]
+    },
+    {
+      "id": "rag-assistant",
+      "title": "RAG Knowledge Assistant",
+      "kicker": "AI Knowledge Assistant · document intelligence",
+      "description": "A local-first assistant that searches private documents and returns source-cited answers, with Word and PDF export workflows.",
+      "tags": ["Python", "ChromaDB", "FastAPI", "Ollama", "Next.js"],
+      "image": "/projects/ai-knowledge-assistant.webp",
+      "featured": true,
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/nirajkumardangi/ai-knowledge-assistant",
+          "isExternal": true
+        }
+      ]
+    },
+    {
+      "id": "devtinder",
+      "title": "DevTinder",
+      "kicker": "Backend learning project · in progress",
+      "description": "A Node.js and Express learning project. Authentication, developer profiles, and matching are listed as planned features.",
+      "tags": ["Node.js", "Express", "MongoDB (planned)", "Vite"],
+      "image": "/projects/devtinder-concept.svg",
+      "featured": true,
+      "links": [
+        {
+          "label": "Backend",
+          "url": "https://github.com/nirajkumardangi/devtinder",
+          "isExternal": true
+        },
+        {
+          "label": "Frontend scaffold",
+          "url": "https://github.com/nirajkumardangi/devtinder-frontend",
+          "isExternal": true
+        }
+      ]
+    },
+    {
+      "id": "writenova",
+      "title": "WriteNova",
+      "kicker": "AI content-generation SaaS",
+      "description": "An AI writing product with account flows, generation history, credit-aware usage, and subscription billing workflows.",
+      "tags": ["Next.js", "Gemini", "MongoDB", "SaaS"],
+      "image": "/projects/writenova.webp",
+      "featured": true,
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/nirajkumardangi/writenova",
+          "isExternal": true
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Technology Intern",
+      "company": "366Pi Technologies",
+      "type": "Internship",
+      "location": "Ranchi, Jharkhand, India (On-site)",
+      "period": "Jun 2024 – Jul 2024",
+      "duration": "2 months",
+      "bullets": [
+        "Built an AI Knowledge Assistant with RAG, ChromaDB, local embeddings, and Ollama-based LLMs; developed ingestion pipelines for PDF, DOCX, Markdown, CSV, and TXT.",
+        "Implemented semantic search, vector retrieval, citation-based responses, and exportable reports.",
+        "Contributed to an AI-powered Tree Detection & Localization System using YOLO-based computer vision; built image-validation workflows for quality checks, object detection, localization, segmentation, and metadata generation.",
+        "Worked with FastAPI, Next.js, vector databases, embeddings, and modern AI application workflows."
+      ],
+      "technologies": ["Python", "FastAPI", "RAG", "ChromaDB", "Ollama", "YOLO", "Computer Vision"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "institution": "Doranda College, Ranchi University",
+      "location": "Ranchi, Jharkhand",
+      "period": "Sep 2024 – Expected Nov 2026",
+      "status": "Pursuing",
+      "focus": "Computer Science fundamentals, MERN stack, Applied AI integration."
+    },
+    {
+      "degree": "Bachelor of Science, Computer Science",
+      "institution": "Ranchi University",
+      "location": "Ranchi, Jharkhand",
+      "period": "Aug 2021 – Oct 2024",
+      "grade": "CGPA 8.12",
+      "focus": "Core CS principles, algorithms, data structures, DBMS, web development.",
+      "finalYearProject": {
+        "title": "FeedAid — Food Donation & Distribution Platform",
+        "description": "Platform addressing food waste and hunger by connecting donors with food distribution networks.",
+        "url": "https://github.com/nirajkumardangi/food-donation"
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Responsive Web Design",
+      "issuer": "freeCodeCamp",
+      "date": "Apr 2026",
+      "credentialId": "nirajkumardangi-rwdv9",
+      "verificationUrl": "https://www.freecodecamp.org/certification/nirajkumardangi/responsive-web-design-v9"
+    },
+    {
+      "title": "Full Stack Web Development 1.0",
+      "issuer": "PW (PhysicsWallah)",
+      "date": "Aug 2024",
+      "credentialId": "d8b000fd-f7b0-473b-b194-c2c43003502c",
+      "verificationUrl": "https://cdn.pwskills.com/learn/certificates/d8b000fd-f7b0-473b-b194-c2c43003502c.pdf"
+    },
+    {
+      "title": "HTML, CSS & JavaScript for Web Developers",
+      "issuer": "Johns Hopkins University / Coursera",
+      "date": "Jun 2022",
+      "credentialId": "6SW2QSXKVKNC",
+      "verificationUrl": "https://www.coursera.org/account/accomplishments/verify/6SW2QSXKVKNC"
+    }
+  ],
+  "achievements": [
+    {
+      "badge": "Pull Shark · Bronze",
+      "multiplier": "×2",
+      "source": "GitHub profile achievement",
+      "description": "Awarded for pull request activity on open-source repositories."
+    },
+    {
+      "label": "Annual Contributions",
+      "value": "803 contributions",
+      "source": "GitHub profile snapshot",
+      "description": "Actively contributing to open-source projects and building AI-powered applications."
+    }
+  ]
+}
