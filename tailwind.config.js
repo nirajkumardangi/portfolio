@@ -35,10 +35,18 @@ module.exports = {
         peach: {
           DEFAULT: 'var(--peach)',
           soft: 'var(--peach-soft)',
+          deep: 'var(--peach-deep)',
         },
         rose: 'var(--rose)',
-        amber: 'var(--amber)',
-        blue: 'var(--blue)',
+        amber: {
+          DEFAULT: 'var(--amber)',
+          deep: 'var(--amber-deep)',
+        },
+        blue: {
+          DEFAULT: 'var(--blue)',
+          deep: 'var(--blue-deep)',
+        },
+        sage: 'var(--sage-accent)',
         focus: 'var(--focus)',
         success: 'var(--success)',
       },
@@ -48,9 +56,11 @@ module.exports = {
       },
       boxShadow: {
         clay: 'var(--clay-shadow)',
+        'clay-card': 'var(--clay-shadow-card)',
         'clay-soft': 'var(--clay-shadow-soft)',
         'clay-inset': 'var(--clay-inset)',
         'clay-inset-light': 'var(--clay-inset-light)',
+        'clay-bevel': 'var(--clay-bevel)',
       },
       borderRadius: {
         xl: 'var(--radius-xl)',

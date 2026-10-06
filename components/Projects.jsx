@@ -15,7 +15,7 @@ function normalize(value) {
 const PROJECTS = [
   {
     id: 'tree-detection',
-    cardClass: 'project-tree-card',
+    cardClass: 'project-tree-card project-flagship',
     imageClass: 'project-tree',
     search: 'tree detection localization computer vision yolo internship 366pi image validation segmentation metadata',
     href: 'https://github.com/nirajkumardangi/tree-detection-localization',
@@ -27,18 +27,19 @@ const PROJECTS = [
     caption: 'ARCHITECTURE SOURCE · 366Pi',
     badgeClass: 'badge-tree',
     badgeIcon: '#i-target',
-    title: 'Tree Detection',
-    kicker: 'Internship contribution · 366Pi Technologies',
-    desc: 'Contributed to an AI-powered tree detection and localization system, including image-validation workflows for detection, localization, segmentation, and metadata generation.',
-    tags: ['YOLO', 'Computer vision', 'Internship'],
+    ribbon: 'Flagship Internship',
+    title: 'Tree Detection & Localization',
+    kicker: 'AI Computer Vision · 366Pi Technologies',
+    desc: 'Contributed to an AI-powered tree detection and localization system, developing robust image-validation workflows for quality checks, YOLO detection, localization, segmentation, and automated metadata generation.',
+    tags: ['YOLO', 'Computer Vision', 'Python', 'Internship'],
     links: [
-      { label: 'My fork', href: 'https://github.com/nirajkumardangi/tree-detection-localization' },
+      { label: 'My Fork', href: 'https://github.com/nirajkumardangi/tree-detection-localization' },
       { label: 'Original · 366Pi', href: 'https://github.com/366Pi/tree-detection-localization' },
     ],
   },
   {
     id: 'rag',
-    cardClass: 'project-rag-card',
+    cardClass: 'project-rag-card project-flagship',
     imageClass: 'project-ai',
     search: 'rag ai knowledge assistant local document search citations chromadb fastapi nextjs ollama qwen python',
     href: 'https://github.com/nirajkumardangi/ai-knowledge-assistant',
@@ -50,12 +51,13 @@ const PROJECTS = [
     caption: null,
     badgeClass: 'badge-ai',
     badgeIcon: '#i-database',
-    title: 'RAG',
-    kicker: 'AI Knowledge Assistant · document intelligence',
-    desc: 'A local-first assistant that searches private documents and returns source-cited answers, with Word and PDF export workflows.',
-    tags: ['Python', 'ChromaDB', 'FastAPI'],
+    ribbon: 'Applied AI Product',
+    title: 'RAG Knowledge Assistant',
+    kicker: 'Local Document Intelligence · Citation Search',
+    desc: 'A local-first intelligence assistant that searches private documents with semantic vector retrieval and returns source-cited answers, complete with Word and PDF report export pipelines.',
+    tags: ['FastAPI', 'ChromaDB', 'Next.js', 'Ollama / Qwen'],
     links: [
-      { label: 'GitHub', href: 'https://github.com/nirajkumardangi/ai-knowledge-assistant' },
+      { label: 'GitHub Repo', href: 'https://github.com/nirajkumardangi/ai-knowledge-assistant' },
     ],
   },
   {
@@ -73,13 +75,14 @@ const PROJECTS = [
     captionClass: 'caption-concept',
     badgeClass: 'badge-tinder',
     badgeIcon: '#i-users',
+    ribbon: 'Backend Architecture',
     title: 'DevTinder',
-    kicker: 'Backend learning project · in progress',
-    desc: 'A Node.js and Express learning project. Authentication, developer profiles, and matching are listed as planned features in the repository.',
-    tags: ['Node.js', 'Express', 'MongoDB · planned'],
+    kicker: 'Developer Networking Platform · In Progress',
+    desc: 'A Node.js & Express architectural learning project exploring JWT authentication, developer profile indexing, match scoring, and robust schema validation.',
+    tags: ['Node.js', 'Express', 'MongoDB (Planned)'],
     links: [
-      { label: 'Backend', href: 'https://github.com/nirajkumardangi/devtinder' },
-      { label: 'Frontend scaffold', href: 'https://github.com/nirajkumardangi/devtinder-frontend' },
+      { label: 'Backend API', href: 'https://github.com/nirajkumardangi/devtinder' },
+      { label: 'Frontend Scaffold', href: 'https://github.com/nirajkumardangi/devtinder-frontend' },
     ],
   },
   {
@@ -96,12 +99,13 @@ const PROJECTS = [
     caption: null,
     badgeClass: 'badge-write',
     badgeIcon: '#i-sparkles',
+    ribbon: 'AI SaaS',
     title: 'WriteNova',
-    kicker: 'AI content-generation SaaS',
-    desc: 'An AI writing product with account flows, generation history, credit-aware usage, and subscription billing workflows.',
-    tags: ['Next.js', 'Gemini', 'MongoDB'],
+    kicker: 'AI Content-Generation Platform',
+    desc: 'A full-stack AI content studio with account flows, token-aware generation history, usage quotas, credit management, and subscription billing workflows.',
+    tags: ['Next.js', 'Gemini AI', 'MongoDB', 'Node.js'],
     links: [
-      { label: 'GitHub', href: 'https://github.com/nirajkumardangi/writenova' },
+      { label: 'GitHub Repo', href: 'https://github.com/nirajkumardangi/writenova' },
     ],
   },
 ];
@@ -127,7 +131,7 @@ export default function Projects() {
           </span>
           <div>
             <h2 id="projects-title">Featured Projects</h2>
-            <p>Four selected projects</p>
+            <p>Crafted engineering &amp; applied AI work</p>
           </div>
         </div>
         <a
@@ -136,7 +140,7 @@ export default function Projects() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          See all <svg className="icon"><use href="#i-arrow"></use></svg>
+          See all on GitHub <svg className="icon"><use href="#i-arrow"></use></svg>
         </a>
       </div>
 
@@ -174,6 +178,9 @@ export default function Projects() {
                     {project.caption}
                   </span>
                 )}
+                {project.ribbon && (
+                  <span className="project-ribbon">{project.ribbon}</span>
+                )}
                 <span className="image-link">
                   <svg className="icon"><use href="#i-external"></use></svg>
                 </span>
@@ -194,7 +201,7 @@ export default function Projects() {
 
                 <div className="project-tags">
                   {project.tags.map((t) => (
-                    <span key={t}>{t}</span>
+                    <span key={t} className="project-tag-chip">{t}</span>
                   ))}
                 </div>
 
@@ -205,8 +212,10 @@ export default function Projects() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="project-link-btn"
                     >
-                      {link.label} <svg className="icon"><use href="#i-external"></use></svg>
+                      <span>{link.label}</span>
+                      <svg className="icon"><use href="#i-external"></use></svg>
                     </a>
                   ))}
                 </div>
