@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A responsive, static portfolio site with a warm cream-and-peach clay design, dark theme support, animated scroll reveals, and a full-text search across projects and skills.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirajkumardangi/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/nirajkumardangi/portfolio/issues"
+  },
+  "homepage": "https://github.com/nirajkumardangi/portfolio#readme",
+  "dependencies": {
+    "autoprefixer": "^10.6.1",
+    "gsap": "^3.15.0",
+    "next": "^14.2.35",
+    "postcss": "^8.5.29",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.19"
+  }
+}

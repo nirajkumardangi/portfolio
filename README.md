@@ -6,54 +6,69 @@ A responsive, static portfolio site with a warm cream-and-peach clay design, dar
 
 ## Tech Stack
 
-- **HTML5** — semantic structure with inline SVG icon sprite
-- **CSS3** — custom properties, clay/neumorphic design tokens, full responsive breakpoints
-- **Vanilla JS** — search, theme toggle, drawer navigation, scroll progress, IntersectionObserver
-- **GSAP 3.15** — title reveal animation and scroll-triggered section reveals (self-hosted)
-- **Self-hosted fonts** — DM Sans + Sora variable WOFF2
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS v3.4 + Custom CSS Design Tokens & Claymorphic System
+- **Animation**: GSAP (hero title stagger & scroll-triggered reveal animations)
+- **Icons & Graphics**: Inline SVG icon sprites & brand icons
+- **Fonts**: Self-hosted variable DM Sans & Sora (WOFF2)
 
 ## Run Locally
 
-Serve the root directory with any static server:
-
 ```bash
-# Python
-python -m http.server 4173
+# Install dependencies
+npm install
 
-# Node (npx)
-npx -y serve . -p 4173
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Then open [http://localhost:4173](http://localhost:4173).
+Open [http://localhost:3000](http://localhost:3000) (or the port displayed in your terminal).
 
 ## Project Structure
 
 ```
-├── index.html          # Main page
-├── styles.css          # All styling + responsive breakpoints
-├── app.js              # Search, theme, nav, animations
-├── 404.html            # Custom error page
-├── robots.txt          # SEO crawl rules
-├── sitemap.xml         # Sitemap for search engines
-├── vendor/
-│   └── gsap.min.js     # Self-hosted GSAP 3.15.0
-└── public/
-    ├── fonts/          # DM Sans & Sora (WOFF2) + licenses
-    ├── illustrations/  # Hero & about artwork
-    ├── projects/       # Project screenshots & concepts
-    ├── resume/         # Downloadable resume PDF
-    └── tech-icons/     # Technology brand SVGs
+├── app/
+│   ├── globals.css         # Tailwind base/components/utilities + clay styling tokens
+│   ├── layout.js           # Root layout with SEO metadata & theme hydration script
+│   ├── not-found.js        # 404 page matching design system
+│   └── page.js             # Main page assembling all modular components
+├── components/
+│   ├── About.jsx           # About me panel with portrait illustration & sparkles
+│   ├── Achievements.jsx    # GitHub highlights & badges
+│   ├── Blog.jsx            # Notes & blog coming-soon section
+│   ├── Certifications.jsx  # Credential cards with verify links
+│   ├── Contact.jsx         # Contact panel, paper airplane SVG, social links
+│   ├── Education.jsx       # Academic background & final year project
+│   ├── Experience.jsx      # Internship experience timeline
+│   ├── Footer.jsx          # Copyright & back-to-top button
+│   ├── Hero.jsx            # Hero card with GSAP title stagger animation
+│   ├── IconSprite.jsx      # SVG symbol definitions
+│   ├── PortfolioContext.jsx# React context for theme, live search, and drawer state
+│   ├── Projects.jsx        # Featured projects with live search filter
+│   ├── ScrollProgress.jsx  # Reading progress bar at top of viewport
+│   ├── ScrollReveal.jsx    # GSAP scroll observer for section reveals
+│   ├── Sidebar.jsx         # Navigation sidebar, avatar, and resume download
+│   ├── Skills.jsx          # Tech stack chips with filter & expand/collapse
+│   ├── Stats.jsx           # Stat cards at a glance
+│   └── Topbar.jsx          # Header with search, theme toggle, and GitHub activity popover
+├── public/                 # Static assets (fonts, illustrations, projects, tech-icons, resume)
+├── tailwind.config.js      # Tailwind CSS configuration with design system tokens
+├── postcss.config.js       # PostCSS configuration
+├── next.config.js          # Next.js configuration
+└── package.json            # Dependencies and npm scripts
 ```
 
 ## Deployment
 
-This is a static site — deploy to any static host:
-
-- **Netlify**: Connect repo → auto-deploys on push
-- **Vercel**: Import project → zero-config deploy
-- **GitHub Pages**: Push to `main` → enable in Settings
-
-No build step required.
+Deploy easily to Vercel, Netlify, or any Node.js hosting platform:
+- **Vercel**: Import repository → framework automatically detected as Next.js → click Deploy.
+- **Netlify**: Connect repository → build command `npm run build` → publish directory `.next`.
 
 ## License
 

@@ -16,5 +16,9 @@ Desktop.ini
 standalone-preview.html
 reference-style-tokens.json
 
-# Node (if ever added)
+# Node & Next.js
 node_modules/
+.next/
+out/
+build/
+.env*.local
