@@ -8,7 +8,7 @@ export default function Achievements() {
           </span>
           <div>
             <h2 id="achievements-title">GitHub Highlights</h2>
-            <p>Public activity snapshot · 1 Oct 2026</p>
+            <p>Rewarding open-source activity &amp; community milestones</p>
           </div>
         </div>
         <a
@@ -17,40 +17,56 @@ export default function Achievements() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          View profile <svg className="icon"><use href="#i-arrow"></use></svg>
+          View on GitHub <svg className="icon"><use href="#i-arrow"></use></svg>
         </a>
       </div>
 
-      <div className="achievement-row">
-        <div className="achievement-badge">
-          <span className="achievement-medal">
+      <div className="achievements-showcase-grid">
+        {/* Card 1: Official GitHub Achievement */}
+        <article className="achievement-card badge-achievement-shark">
+          <div className="achievement-icon-wrap medal-shark">
             <svg className="icon"><use href="#i-award"></use></svg>
-            <b>×2</b>
-          </span>
-          <div>
-            <strong>Pull Shark · Bronze</strong>
-            <small>GitHub profile achievement</small>
+            <span className="medal-multiplier">×2</span>
           </div>
-        </div>
+          <div className="achievement-meta">
+            <span className="achievement-category">GitHub Badge</span>
+            <h3 className="achievement-name">Pull Shark · Bronze</h3>
+            <p className="achievement-detail">2 merged pull requests in open source repositories</p>
+          </div>
+        </article>
 
-        <div className="achievement-badge">
-          <span className="achievement-medal medal-activity">
+        {/* Card 2: Contributions Activity */}
+        <article className="achievement-card badge-achievement-activity">
+          <div className="achievement-icon-wrap medal-activity">
             <svg className="icon"><use href="#i-activity"></use></svg>
-          </span>
-          <div>
-            <strong>803 contributions</strong>
-            <small>Last year, as displayed on GitHub</small>
           </div>
-        </div>
+          <div className="achievement-meta">
+            <span className="achievement-category">Yearly Activity</span>
+            <h3 className="achievement-name">803 Contributions</h3>
+            <p className="achievement-detail">97% commits · Active streak across AI &amp; full-stack repos</p>
+          </div>
+        </article>
 
-        <div className="achievement-note">
-          <span className="note-icon">
-            <svg className="icon"><use href="#i-sparkles"></use></svg>
-          </span>
-          <p>
-            Actively contributing to open-source projects and building AI-powered applications.
-          </p>
-        </div>
+        {/* Card 3: Repositories & Open Source */}
+        <article className="achievement-card badge-achievement-repos">
+          <div className="achievement-icon-wrap medal-repos">
+            <svg className="icon"><use href="#i-folder"></use></svg>
+          </div>
+          <div className="achievement-meta">
+            <span className="achievement-category">Open Source</span>
+            <h3 className="achievement-name">36 Public Repos</h3>
+            <p className="achievement-detail">Architectural experiments, AI pipelines &amp; web apps</p>
+          </div>
+        </article>
+      </div>
+
+      <div className="achievement-callout">
+        <span className="callout-sparkle">
+          <svg className="icon"><use href="#i-sparkles"></use></svg>
+        </span>
+        <p>
+          Continuous learning mindset with daily code iterations, transparent Git history, and production-tested open source architectures.
+        </p>
       </div>
     </section>
   );

@@ -205,7 +205,7 @@ export default function Skills() {
           </span>
           <div>
             <h2 id="skills-title">My Tech Stack</h2>
-            <p>Project-backed tools &amp; technologies</p>
+            <p>Tactile engineering &amp; applied AI tools</p>
           </div>
         </div>
         <button
@@ -233,7 +233,7 @@ export default function Skills() {
               <span className={`skill-mark ${skill.markClass || ''}`}>
                 {skill.mark}
               </span>
-              {skill.name}
+              <span className="skill-name">{skill.name}</span>
             </span>
           );
         })}
@@ -252,7 +252,7 @@ export default function Skills() {
               <span className={`skill-mark ${skill.markClass || ''}`}>
                 {skill.mark}
               </span>
-              {skill.name}
+              <span className="skill-name">{skill.name}</span>
             </span>
           );
         })}
